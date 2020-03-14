@@ -8,6 +8,8 @@ import sys
 
 import nbsphinx
 
+from _version import __version__
+
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent
 
@@ -26,8 +28,9 @@ project = "Jupyter[Lab] Language Server"
 copyright = "2020, Jupyter[Lab] Language Server Contributors"
 author = "Jupyter[Lab] Language Server Contributors"
 
-version = "0.7.0"
-release = "0"
+
+version = __version__
+release = __version__
 
 extensions = [
     "recommonmark",
