@@ -71,7 +71,10 @@ class PythonModuleSpec(SpecBase):
     def __call__(self, mgr: LanguageServerManagerAPI) -> KeyedLanguageServerSpecs:
         spec = __import__("importlib").util.find_spec(self.python_module)
 
-        if not spec.origin:  # pragma: no cover
+        # if module is not importable (not installed):
+        if not spec or not spec.origin:
+            print(self)
+            # TODO: test this
             return {}
 
         return {
