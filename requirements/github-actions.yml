@@ -38,3 +38,7 @@ dependencies:
   - robotframework-seleniumlibrary
   # TODO: remove when jedi vs IPython is resolved
   - jedi <0.18
+  # just investigating
+  - requests >=2.25.1
+  - jupyterlab_server <=2.0.0
+  - jupyter_server <=1.1.4
