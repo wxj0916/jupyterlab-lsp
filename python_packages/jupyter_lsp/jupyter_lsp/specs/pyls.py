@@ -32,5 +32,5 @@ class PythonLanguageServer(PythonModuleSpec):
             dict(display_name="pyls-isort", install=dict(pip="pip install pyls-isort")),
         ],
         config_schema=load_config_schema(key),
-        env=dict(PYTHONUNBUFFERED="1"),
+        env=dict(PYTHONUNBUFFERED="1", PYTHONIOENCODING="utf-8"),
     )
