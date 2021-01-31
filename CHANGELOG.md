@@ -1,5 +1,13 @@
 ## CHANGELOG
 
+### `@krassowski/jupyterlab-lsp 2.1.3` (2021-01-30)
+
+- bug fixes:
+  - backported: connection manager now properly keeps track of notebooks when multiple notebooks are open ([#474], [#486])
+
+[#474]: https://github.com/krassowski/jupyterlab-lsp/issues/474
+[#486]: https://github.com/krassowski/jupyterlab-lsp/issues/486
+
 ### `@krassowski/jupyterlab-lsp 2.1.2` (2021-01-02)
 
 - features
